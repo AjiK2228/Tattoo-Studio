@@ -1,0 +1,399 @@
+
+  
+  body{
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: white;
+  scroll-behavior: smooth !important;
+}
+span{
+  color: red;
+}
+
+
+
+.wrapper{
+   height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 20px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  
+}
+
+header{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  height: 100%;
+  z-index: -6;
+ 
+}
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background , .foreground-text{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  
+ 
+}
+.background{
+  transform: translateZ(-250px) scale(14);
+  object-fit: cover;
+  z-index: -1;
+}
+.foreground-text{
+  z-index: 1;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: end;
+  
+  
+
+
+}
+
+.brand-name{
+
+  padding: 10px 15px 50px 0;
+  width: 180px;
+  height: 180px;
+  border-right: 6px solid white;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+
+
+.gif{
+  width: 180px;
+  height: 180px;
+  animation: gif-animate 3s ease-in-out infinite;
+  background-size: cover;
+  
+}
+
+@keyframes gif-animate{
+  0%,100% {
+    background-image: url(gif-1.png);
+  }
+  20%{
+    background-image: url(gif-2.png);
+  }
+  40%{
+    background-image: url(gif-3.png);
+  }
+  60%{
+    background-image: url(gif-4.png);
+  }
+  80%{
+    background-image: url(gif-5.png);
+  }
+}
+
+.arrow{
+  background-image: url(down-arrow.png);
+  background-size: cover;
+  position: absolute;
+ width: 40px;
+ height: 40px;
+  z-index: 1;
+  bottom: 0px;
+  
+ 
+}
+
+.second-page{
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:5vh;
+  top: 110vh;
+  z-index: 5;
+}
+
+.second-page .sec-left{
+  text-align: end;
+  margin-right: 3vw;
+  font-size: 30px;
+  margin-left: 3vw;
+  z-index: 1;
+}
+
+.second-page .sec-left h3{
+padding: 10px 30px;
+border:  6px rgb(0, 0, 0) solid;
+border-top: 0;
+border-bottom: 0;
+}
+
+
+.second-page .sec-right{
+  width: 40vw;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Alegreya', serif;
+  font-style: italic;
+  line-height: 160%;
+  margin-left: 20px;
+  z-index: 1;
+}
+
+.third-page{
+  
+ position: absolute;
+  transform-style: preserve-3d;
+  top:170vh;
+  color: white;
+  font-size: 35px;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.third-page .sec-left{
+  width:35vw;
+  margin: 0vh 3vw;
+  font-size: 20px;
+  font-family: 'Lato' ,sans-serif;
+  display: flex;
+  
+  justify-items: center;
+}
+.third-page .sec-right{
+  width:35vw;
+  margin: 0vh 3vw;
+  font-size: 20px;
+  font-family: 'Lato' ,sans-serif;
+  display: flex;
+  
+  justify-items: center;
+}
+
+.artist{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.third-page .sec-left h1{
+  margin-bottom: -25px;
+}
+.third-page .sec-right h1{
+  margin-bottom: -25px;
+}
+.third-page .sec-right p{
+  font-family: 'Lato' ,sans-serif;
+  font-size: 15px;
+}
+.third-page .sec-left p{
+  font-family: 'Lato' ,sans-serif;
+  font-size: 15px;
+}
+.cute-icon{
+  margin-top: -10vh;
+}
+.bg{
+  position: absolute;
+  bottom:10vh;
+  background-size: cover;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  transform: translateZ(-5px)scale(1.55);
+}
+
+.artist .sec-right img , .artist .sec-left img{
+  width: 18vw;
+  height: auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10vw;
+  
+}
+
+
+.artist .sec-left , .artist .sec-right{
+  display: flex;
+  width: 40vw;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.forthPage{
+  background-color: white;
+  width: 100vw;
+  position: relative;
+  top: 405vh;
+  color: rgb(0, 0, 0);
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+  
+}
+.head h1{
+  font-size: 75px;
+  
+}
+.head{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forthPage .head .cute-icon{
+  padding-top: 10vh;
+  margin-bottom: -10vh;
+}
+
+.forthPage .photo-map{
+  display: grid;
+  grid-template-columns:auto auto auto;
+  gap: 2px;
+  padding: 0;
+  margin: 0 0 8vh 0;
+}
+
+.photo-map img{
+  row-gap: 0px;
+  column-gap: 0px;
+}
+
+.fifth-page{
+ 
+  background-color: black;
+  background-size: cover;
+  width: 100vw;
+  position: absolute;
+  top: 533vh;
+  color: rgb(255, 255, 255);
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fifth-page .photo-map{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding-bottom: 15vh;
+
+}
+ .photo-map img{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+
+ }
+
+ .sixth-page{
+  background-color: white;
+  color: black;
+  padding-bottom: 7vh;
+  position: absolute;
+  top:653vh;
+  width: 100vw;
+  z-index: 1;
+ }
+ .sixth-page .top-sec{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+.sixth-page .left-sec{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35vw;
+}
+ .sixth-page h1{
+  font-size: 75px;
+ 
+ }
+
+ .sixth-page .cute-icon{
+  margin-bottom: -10vh;
+  margin-top: 5vh;
+ }
+
+ .sixth-page h3{
+font-size: 45px;
+margin-bottom: -2vh;
+padding-top: 1vh;
+margin-top: -1vh;
+ }
+
+ .sixth-page .left-sec p{
+  font-size: 25px;
+  margin-bottom: -2vh;
+ }
+
+ .sixth-page .bottom-sec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10vh;
+ }
+
+ footer{
+  position: sticky;
+  top: 90vh;
+  z-index: 4;
+  width: 100vw;
+  height: 10vh;
+color: aliceblue;
+background-color: black;
+font-weight: 500;
+
+ }
+
+ footer ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ }
+ footer ul li{
+  margin-top: auto;
+  margin-bottom: auto;
+  text-decoration: none;
+  color: aliceblue;
+  padding: auto 10vw;
+  margin: 3vh 3vw;
+  list-style-type:georgian;
+  list-style: none;
+ }
+
+ footer ul li a{
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
+  list-style-type:georgian;
+  list-style: none;
+ }
